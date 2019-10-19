@@ -1,0 +1,653 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arduino:Arduino_Uno_Shield XA1
+U 1 1 5DAB78F1
+P 3600 2600
+F 0 "XA1" H 3600 3987 60  0000 C CNN
+F 1 "Arduino_Uno_Shield" H 3600 3881 60  0000 C CNN
+F 2 "Arduino:Arduino_Uno_Shield" H 5400 6350 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-uno-rev3" H 5400 6350 60  0001 C CNN
+	1    3600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5DAB7C70
+P 1400 2250
+F 0 "J2" H 1480 2242 50  0000 L CNN
+F 1 "Start" H 1480 2151 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 1400 2250 50  0001 C CNN
+F 3 "~" H 1400 2250 50  0001 C CNN
+	1    1400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5DAB7CD3
+P 1400 2550
+F 0 "J3" H 1479 2542 50  0000 L CNN
+F 1 "Pause" H 1479 2451 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 1400 2550 50  0001 C CNN
+F 3 "~" H 1400 2550 50  0001 C CNN
+	1    1400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5DAB7CFA
+P 1400 2850
+F 0 "J4" H 1480 2842 50  0000 L CNN
+F 1 "Stop" H 1480 2751 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 1400 2850 50  0001 C CNN
+F 3 "~" H 1400 2850 50  0001 C CNN
+	1    1400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5DAB7EAC
+P 6800 3250
+F 0 "J6" H 6880 3242 50  0000 L CNN
+F 1 "X_Limit" H 6880 3151 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6800 3250 50  0001 C CNN
+F 3 "~" H 6800 3250 50  0001 C CNN
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J9
+U 1 1 5DAB8079
+P 7550 1000
+F 0 "J9" H 7630 992 50  0000 L CNN
+F 1 "X_Motor" H 7630 901 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x04_P3.50mm_Horizontal" H 7550 1000 50  0001 C CNN
+F 3 "~" H 7550 1000 50  0001 C CNN
+	1    7550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J10
+U 1 1 5DAB8141
+P 7550 1550
+F 0 "J10" H 7629 1542 50  0000 L CNN
+F 1 "Y_motor" H 7629 1451 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x04_P3.50mm_Horizontal" H 7550 1550 50  0001 C CNN
+F 3 "~" H 7550 1550 50  0001 C CNN
+	1    7550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J11
+U 1 1 5DAB8162
+P 7550 2100
+F 0 "J11" H 7629 2092 50  0000 L CNN
+F 1 "Z_motor" H 7629 2001 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x04_P3.50mm_Horizontal" H 7550 2100 50  0001 C CNN
+F 3 "~" H 7550 2100 50  0001 C CNN
+	1    7550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J12
+U 1 1 5DAB8181
+P 7550 2700
+F 0 "J12" H 7629 2692 50  0000 L CNN
+F 1 "Spindle" H 7629 2601 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x04_P3.50mm_Horizontal" H 7550 2700 50  0001 C CNN
+F 3 "~" H 7550 2700 50  0001 C CNN
+	1    7550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DAB8283
+P 5950 3150
+F 0 "R2" V 5743 3150 50  0000 C CNN
+F 1 "4.7k" V 5834 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 3150 50  0001 C CNN
+F 3 "~" H 5950 3150 50  0001 C CNN
+	1    5950 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DAB8319
+P 6200 3300
+F 0 "C2" H 6315 3346 50  0000 L CNN
+F 1 "100nf" H 6315 3255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6238 3150 50  0001 C CNN
+F 3 "~" H 6200 3300 50  0001 C CNN
+	1    6200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3150 6200 3150
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5DAB882B
+P 5950 3450
+F 0 "#PWR0101" H 5950 3200 50  0001 C CNN
+F 1 "GNDREF" H 5955 3277 50  0000 C CNN
+F 2 "" H 5950 3450 50  0001 C CNN
+F 3 "" H 5950 3450 50  0001 C CNN
+	1    5950 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3450 6200 3450
+Wire Wire Line
+	6200 3150 6400 3150
+Wire Wire Line
+	6600 3150 6600 3250
+Wire Wire Line
+	6600 3350 6600 3450
+Wire Wire Line
+	6600 3450 6200 3450
+Connection ~ 6200 3150
+Connection ~ 6200 3450
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 5DAB9499
+P 6800 4100
+F 0 "J7" H 6879 4092 50  0000 L CNN
+F 1 "Y_Limit" H 6879 4001 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6800 4100 50  0001 C CNN
+F 3 "~" H 6800 4100 50  0001 C CNN
+	1    6800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DAB94A0
+P 5950 4000
+F 0 "R3" V 5743 4000 50  0000 C CNN
+F 1 "4.7k" V 5834 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 4000 50  0001 C CNN
+F 3 "~" H 5950 4000 50  0001 C CNN
+	1    5950 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5DAB94A7
+P 6200 4150
+F 0 "C3" H 6315 4196 50  0000 L CNN
+F 1 "100nf" H 6315 4105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6238 4000 50  0001 C CNN
+F 3 "~" H 6200 4150 50  0001 C CNN
+	1    6200 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4000 6200 4000
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 5DAB94AF
+P 5950 4300
+F 0 "#PWR0102" H 5950 4050 50  0001 C CNN
+F 1 "GNDREF" H 5955 4127 50  0000 C CNN
+F 2 "" H 5950 4300 50  0001 C CNN
+F 3 "" H 5950 4300 50  0001 C CNN
+	1    5950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4300 6200 4300
+Wire Wire Line
+	6200 4000 6450 4000
+Wire Wire Line
+	6600 4000 6600 4100
+Wire Wire Line
+	6600 4200 6600 4300
+Wire Wire Line
+	6600 4300 6200 4300
+Connection ~ 6200 4000
+Connection ~ 6200 4300
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 5DAB98A7
+P 6800 5000
+F 0 "J8" H 6880 4992 50  0000 L CNN
+F 1 "Z_Limit" H 6880 4901 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6800 5000 50  0001 C CNN
+F 3 "~" H 6800 5000 50  0001 C CNN
+	1    6800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DAB98AE
+P 5950 4900
+F 0 "R4" V 5743 4900 50  0000 C CNN
+F 1 "4.7k" V 5834 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 4900 50  0001 C CNN
+F 3 "~" H 5950 4900 50  0001 C CNN
+	1    5950 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5DAB98B5
+P 6200 5050
+F 0 "C4" H 6315 5096 50  0000 L CNN
+F 1 "100nf" H 6315 5005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6238 4900 50  0001 C CNN
+F 3 "~" H 6200 5050 50  0001 C CNN
+	1    6200 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4900 6200 4900
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 5DAB98BD
+P 5950 5200
+F 0 "#PWR0103" H 5950 4950 50  0001 C CNN
+F 1 "GNDREF" H 5955 5027 50  0000 C CNN
+F 2 "" H 5950 5200 50  0001 C CNN
+F 3 "" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5200 6200 5200
+Wire Wire Line
+	6200 4900 6400 4900
+Wire Wire Line
+	6600 4900 6600 5000
+Wire Wire Line
+	6600 5100 6600 5200
+Wire Wire Line
+	6600 5200 6200 5200
+Connection ~ 6200 4900
+Connection ~ 6200 5200
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5DAB9A51
+P 1800 1350
+F 0 "J5" H 1879 1342 50  0000 L CNN
+F 1 "Probe" H 1879 1251 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 1800 1350 50  0001 C CNN
+F 3 "~" H 1800 1350 50  0001 C CNN
+	1    1800 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DAB9A58
+P 950 1250
+F 0 "R1" V 743 1250 50  0000 C CNN
+F 1 "4.7k" V 834 1250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 880 1250 50  0001 C CNN
+F 3 "~" H 950 1250 50  0001 C CNN
+	1    950  1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DAB9A5F
+P 1200 1400
+F 0 "C1" H 1315 1446 50  0000 L CNN
+F 1 "100nf" H 1315 1355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 1238 1250 50  0001 C CNN
+F 3 "~" H 1200 1400 50  0001 C CNN
+	1    1200 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1250 1200 1250
+$Comp
+L power:GNDREF #PWR0104
+U 1 1 5DAB9A67
+P 950 1550
+F 0 "#PWR0104" H 950 1300 50  0001 C CNN
+F 1 "GNDREF" H 955 1377 50  0000 C CNN
+F 2 "" H 950 1550 50  0001 C CNN
+F 3 "" H 950 1550 50  0001 C CNN
+	1    950  1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  1550 1200 1550
+Wire Wire Line
+	1200 1250 1450 1250
+Wire Wire Line
+	1600 1250 1600 1350
+Wire Wire Line
+	1600 1450 1600 1550
+Wire Wire Line
+	1600 1550 1200 1550
+Connection ~ 1200 1250
+Connection ~ 1200 1550
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 5DABA472
+P 1000 2350
+F 0 "#PWR0105" H 1000 2100 50  0001 C CNN
+F 1 "GNDREF" H 1005 2177 50  0000 C CNN
+F 2 "" H 1000 2350 50  0001 C CNN
+F 3 "" H 1000 2350 50  0001 C CNN
+	1    1000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2350 1200 2350
+$Comp
+L power:GNDREF #PWR0106
+U 1 1 5DABAA0B
+P 1000 2650
+F 0 "#PWR0106" H 1000 2400 50  0001 C CNN
+F 1 "GNDREF" H 1005 2477 50  0000 C CNN
+F 2 "" H 1000 2650 50  0001 C CNN
+F 3 "" H 1000 2650 50  0001 C CNN
+	1    1000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2650 1200 2650
+$Comp
+L power:GNDREF #PWR0107
+U 1 1 5DABACB1
+P 1000 2950
+F 0 "#PWR0107" H 1000 2700 50  0001 C CNN
+F 1 "GNDREF" H 1005 2777 50  0000 C CNN
+F 2 "" H 1000 2950 50  0001 C CNN
+F 3 "" H 1000 2950 50  0001 C CNN
+	1    1000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2950 1200 2950
+$Comp
+L power:GNDREF #PWR0108
+U 1 1 5DABBDF9
+P 1950 3350
+F 0 "#PWR0108" H 1950 3100 50  0001 C CNN
+F 1 "GNDREF" H 1955 3177 50  0000 C CNN
+F 2 "" H 1950 3350 50  0001 C CNN
+F 3 "" H 1950 3350 50  0001 C CNN
+	1    1950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3350 2300 3350
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5DABEA9D
+P 1400 1950
+F 0 "J1" H 1479 1942 50  0000 L CNN
+F 1 "Coolant" H 1479 1851 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 1400 1950 50  0001 C CNN
+F 3 "~" H 1400 1950 50  0001 C CNN
+	1    1400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2550 1850 2550
+Wire Wire Line
+	1850 2550 1850 2150
+Wire Wire Line
+	1850 2150 1200 2150
+Wire Wire Line
+	1200 2150 1200 2250
+Wire Wire Line
+	2300 2650 1800 2650
+Wire Wire Line
+	1800 2650 1800 2450
+Wire Wire Line
+	1800 2450 1200 2450
+Wire Wire Line
+	1200 2450 1200 2550
+Wire Wire Line
+	2300 2750 1200 2750
+Wire Wire Line
+	1200 2750 1200 2850
+$Comp
+L power:GNDREF #PWR0109
+U 1 1 5DAC88FF
+P 1000 2050
+F 0 "#PWR0109" H 1000 1800 50  0001 C CNN
+F 1 "GNDREF" H 1005 1877 50  0000 C CNN
+F 2 "" H 1000 2050 50  0001 C CNN
+F 3 "" H 1000 2050 50  0001 C CNN
+	1    1000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2050 1200 2050
+Wire Wire Line
+	2300 2450 1900 2450
+Wire Wire Line
+	1900 2450 1900 1850
+Wire Wire Line
+	1900 1850 1200 1850
+Wire Wire Line
+	1200 1850 1200 1950
+Wire Wire Line
+	1450 1250 1450 1100
+Wire Wire Line
+	1450 1100 2150 1100
+Wire Wire Line
+	2150 1100 2150 2250
+Wire Wire Line
+	2150 2250 2300 2250
+Connection ~ 1450 1250
+Wire Wire Line
+	1450 1250 1600 1250
+Wire Wire Line
+	2300 3550 2100 3550
+Wire Wire Line
+	700  3550 700  1250
+Wire Wire Line
+	700  1250 800  1250
+Wire Wire Line
+	6400 3150 6400 2250
+Wire Wire Line
+	6400 2250 4900 2250
+Connection ~ 6400 3150
+Wire Wire Line
+	6400 3150 6600 3150
+Wire Wire Line
+	6450 4000 6450 3700
+Wire Wire Line
+	6450 3700 5500 3700
+Wire Wire Line
+	5500 3700 5500 2350
+Wire Wire Line
+	5500 2350 4900 2350
+Connection ~ 6450 4000
+Wire Wire Line
+	6450 4000 6600 4000
+Wire Wire Line
+	6400 4900 6400 4600
+Wire Wire Line
+	6400 4600 5350 4600
+Wire Wire Line
+	5350 4600 5350 2550
+Wire Wire Line
+	5350 2550 4900 2550
+Connection ~ 6400 4900
+Wire Wire Line
+	6400 4900 6600 4900
+Wire Wire Line
+	2100 3550 2100 4200
+Wire Wire Line
+	2100 4200 5800 4200
+Wire Wire Line
+	5800 4200 5800 4000
+Connection ~ 2100 3550
+Wire Wire Line
+	2100 3550 700  3550
+Wire Wire Line
+	5800 3150 5800 4000
+Connection ~ 5800 4000
+Wire Wire Line
+	5800 4200 5800 4900
+Connection ~ 5800 4200
+$Comp
+L power:GNDREF #PWR0110
+U 1 1 5DADBA61
+P 8500 1300
+F 0 "#PWR0110" H 8500 1050 50  0001 C CNN
+F 1 "GNDREF" H 8505 1127 50  0000 C CNN
+F 2 "" H 8500 1300 50  0001 C CNN
+F 3 "" H 8500 1300 50  0001 C CNN
+	1    8500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0111
+U 1 1 5DADD19E
+P 7050 1750
+F 0 "#PWR0111" H 7050 1500 50  0001 C CNN
+F 1 "GNDREF" H 7055 1577 50  0000 C CNN
+F 2 "" H 7050 1750 50  0001 C CNN
+F 3 "" H 7050 1750 50  0001 C CNN
+	1    7050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0112
+U 1 1 5DADE95F
+P 7150 2300
+F 0 "#PWR0112" H 7150 2050 50  0001 C CNN
+F 1 "GNDREF" H 7155 2127 50  0000 C CNN
+F 2 "" H 7150 2300 50  0001 C CNN
+F 3 "" H 7150 2300 50  0001 C CNN
+	1    7150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0113
+U 1 1 5DAE01A7
+P 7150 2900
+F 0 "#PWR0113" H 7150 2650 50  0001 C CNN
+F 1 "GNDREF" H 7155 2727 50  0000 C CNN
+F 2 "" H 7150 2900 50  0001 C CNN
+F 3 "" H 7150 2900 50  0001 C CNN
+	1    7150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2900 7350 2900
+Wire Wire Line
+	4900 2150 6800 2150
+Wire Wire Line
+	7350 1650 6800 1650
+Wire Wire Line
+	6800 1650 6800 1100
+Connection ~ 6800 2150
+Wire Wire Line
+	4900 1550 6000 1550
+Wire Wire Line
+	6000 1550 6000 900 
+Wire Wire Line
+	6000 900  7350 900 
+Wire Wire Line
+	4900 1650 6050 1650
+Wire Wire Line
+	6050 1650 6050 1450
+Wire Wire Line
+	6050 1450 7350 1450
+Wire Wire Line
+	4900 1750 6050 1750
+Wire Wire Line
+	6050 2000 7350 2000
+Wire Wire Line
+	6800 1650 6800 2150
+Connection ~ 6800 1650
+Wire Wire Line
+	6800 2150 6800 2200
+Wire Wire Line
+	6800 2200 7350 2200
+Wire Wire Line
+	6050 1750 6050 2000
+Wire Wire Line
+	4900 1850 6600 1850
+Wire Wire Line
+	6600 1850 6600 1000
+Wire Wire Line
+	6600 1000 7350 1000
+Wire Wire Line
+	4900 1950 6700 1950
+Wire Wire Line
+	6700 1950 6700 1550
+Wire Wire Line
+	6700 1550 7350 1550
+Wire Wire Line
+	4900 2050 7350 2050
+Wire Wire Line
+	7350 2050 7350 2100
+Wire Wire Line
+	4900 2650 6600 2650
+Wire Wire Line
+	6600 2650 6600 2700
+Wire Wire Line
+	6600 2700 7350 2700
+Wire Wire Line
+	7350 2600 6600 2600
+Wire Wire Line
+	6600 2600 6600 2450
+Wire Wire Line
+	6600 2450 4900 2450
+Wire Wire Line
+	5800 3150 5800 2800
+Wire Wire Line
+	5800 2800 7350 2800
+Connection ~ 5800 3150
+Wire Wire Line
+	7150 2300 7350 2300
+$Comp
+L Device:R R6
+U 1 1 5DB23CED
+P 7200 1750
+F 0 "R6" V 6993 1750 50  0000 C CNN
+F 1 "0" V 7084 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7130 1750 50  0001 C CNN
+F 3 "~" H 7200 1750 50  0001 C CNN
+	1    7200 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5DB3BAC2
+P 7200 1100
+F 0 "R5" V 6993 1100 50  0000 C CNN
+F 1 "0" V 7084 1100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7130 1100 50  0001 C CNN
+F 3 "~" H 7200 1100 50  0001 C CNN
+	1    7200 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5DB41CF7
+P 8350 1300
+F 0 "R7" V 8143 1300 50  0000 C CNN
+F 1 "0" V 8234 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8280 1300 50  0001 C CNN
+F 3 "~" H 8350 1300 50  0001 C CNN
+	1    8350 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 1200 7350 1300
+Wire Wire Line
+	6800 1100 7050 1100
+Wire Wire Line
+	7350 1300 8200 1300
+$EndSCHEMATC
